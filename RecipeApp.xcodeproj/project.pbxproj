@@ -70,6 +70,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60456398260FA76A00B3A203 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		608BB79F260F9C00003DF558 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +129,7 @@
 				608BB7B9260F9C02003DF558 /* Info.plist */,
 				608BB7B4260F9C02003DF558 /* Assets.xcassets */,
 				608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */,
+				60456398260FA76A00B3A203 /* Generated */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,8 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

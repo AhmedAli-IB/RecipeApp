@@ -1,1 +1,6 @@
+xcassets:
+  inputs: RecipeApp/Resources
+  outputs:
+    - templateName: swift5
+      output: RecipeApp/Resources/Generated/Assets.swift
 
