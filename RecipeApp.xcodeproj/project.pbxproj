@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6045639D260FA7CE00B3A203 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045639C260FA7CE00B3A203 /* Assets.swift */; };
 		608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AB260F9C01003DF558 /* AppDelegate.swift */; };
 		608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AD260F9C01003DF558 /* SceneDelegate.swift */; };
 		608BB7B0260F9C01003DF558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AF260F9C01003DF558 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6045639C260FA7CE00B3A203 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		608BB7A8260F9C01003DF558 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608BB7AB260F9C01003DF558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		608BB7AD260F9C01003DF558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +75,24 @@
 		60456398260FA76A00B3A203 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				6045639C260FA7CE00B3A203 /* Assets.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		604563A1260FA7DF00B3A203 /* ViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				604563A2260FA7F700B3A203 /* RecipesList */,
+			);
+			path = ViewRelated;
+			sourceTree = "<group>";
+		};
+		604563A2260FA7F700B3A203 /* RecipesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipesList;
 			sourceTree = "<group>";
 		};
 		608BB79F260F9C00003DF558 = {
@@ -137,6 +155,7 @@
 		608BB7FF260FA3DC003DF558 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				604563A1260FA7DF00B3A203 /* ViewRelated */,
 				608BB7AB260F9C01003DF558 /* AppDelegate.swift */,
 				608BB7AD260F9C01003DF558 /* SceneDelegate.swift */,
 			);
@@ -315,6 +334,7 @@
 			files = (
 				608BB7B0260F9C01003DF558 /* ViewController.swift in Sources */,
 				608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */,
+				6045639D260FA7CE00B3A203 /* Assets.swift in Sources */,
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
