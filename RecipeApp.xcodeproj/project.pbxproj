@@ -13,8 +13,6 @@
 		608BB7B3260F9C01003DF558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B1260F9C01003DF558 /* Main.storyboard */; };
 		608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B4260F9C02003DF558 /* Assets.xcassets */; };
 		608BB7B8260F9C02003DF558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */; };
-		608BB7C3260F9C02003DF558 /* RecipeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7C2260F9C02003DF558 /* RecipeAppTests.swift */; };
-		608BB7CE260F9C02003DF558 /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7CD260F9C02003DF558 /* RecipeAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +42,8 @@
 		608BB7B7260F9C02003DF558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		608BB7B9260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608BB7BE260F9C02003DF558 /* RecipeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		608BB7C2260F9C02003DF558 /* RecipeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppTests.swift; sourceTree = "<group>"; };
 		608BB7C4260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608BB7C9260F9C02003DF558 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		608BB7CD260F9C02003DF558 /* RecipeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITests.swift; sourceTree = "<group>"; };
 		608BB7CF260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +109,6 @@
 		608BB7C1260F9C02003DF558 /* RecipeAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				608BB7C2260F9C02003DF558 /* RecipeAppTests.swift */,
 				608BB7C4260F9C02003DF558 /* Info.plist */,
 			);
 			path = RecipeAppTests;
@@ -122,7 +117,6 @@
 		608BB7CC260F9C02003DF558 /* RecipeAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				608BB7CD260F9C02003DF558 /* RecipeAppUITests.swift */,
 				608BB7CF260F9C02003DF558 /* Info.plist */,
 			);
 			path = RecipeAppUITests;
@@ -290,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608BB7C3260F9C02003DF558 /* RecipeAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608BB7CE260F9C02003DF558 /* RecipeAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
