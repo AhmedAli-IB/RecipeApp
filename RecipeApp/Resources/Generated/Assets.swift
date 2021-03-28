@@ -24,6 +24,7 @@ internal enum Asset {
   internal enum Assets {
     internal static let accentColor = ColorAsset(name: "AccentColor")
     internal static let favoriteTabIcon = ImageAsset(name: "favorite-tab-icon")
+    internal static let foodImage = ImageAsset(name: "food-image")
     internal static let recipeTabIcon = ImageAsset(name: "recipe-tab-icon")
     internal static let splashIcon = ImageAsset(name: "splash-icon")
   }

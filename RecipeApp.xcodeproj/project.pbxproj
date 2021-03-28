@@ -54,6 +54,7 @@
 		608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AD260F9C01003DF558 /* SceneDelegate.swift */; };
 		608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B4260F9C02003DF558 /* Assets.xcassets */; };
 		608BB7B8260F9C02003DF558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */; };
+		60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		608BB7C4260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608BB7C9260F9C02003DF558 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608BB7CF260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 			children = (
 				60456450260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift */,
 				6045647C260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift */,
+				60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				604563BF260FB08C00B3A203 /* URLParameterEncoding.swift in Sources */,
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 				604563CE260FB12200B3A203 /* HttpTask.swift in Sources */,
+				60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */,
 				604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */,
 				60456446260FCD1C00B3A203 /* Observable.swift in Sources */,
 				604563C4260FB0FB00B3A203 /* EndPointType.swift in Sources */,

@@ -9,6 +9,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    // MARK: - Outlets
+    //
+    @IBOutlet private weak var loginContainerView: UIView!
+    @IBOutlet private weak var emailTF: UITextField!
+    @IBOutlet private weak var passwordTF: UITextField!
+    @IBOutlet private weak var loginButton: UIButton!
+    
     // MARK: - Properties
     //
      var coordinator: AuthCoordinatorProtocol?
@@ -23,8 +30,26 @@ class LoginViewController: UIViewController {
 // MARK: - Configurations
 //
 private extension LoginViewController {
+    
     func configureAppearance() {
-        self.title = Strings.title
+        configureView()
+        configureLoginView()
+        configureLoginButton()
+    }
+    /// Configure super view
+    ///
+    func configureView() {
+        title = Strings.title
+    }
+    /// Configure login view
+    ///
+    func configureLoginView() {
+        loginContainerView.makeCardView()
+    }
+    /// Configure login button
+    ///
+    func configureLoginButton() {
+        loginButton.layer.cornerRadius = Constants.loginButtonCornerRadius
     }
 }
 // MARK: - IBActions
@@ -34,6 +59,12 @@ private extension LoginViewController {
     @IBAction func loginButtonTapped(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: .credentials)
         coordinator?.reloadLaunchInstructor()
+    }
+}
+
+private extension LoginViewController {
+    enum Constants {
+        static let loginButtonCornerRadius = CGFloat(20)
     }
 }
 // MARK: - Strings
