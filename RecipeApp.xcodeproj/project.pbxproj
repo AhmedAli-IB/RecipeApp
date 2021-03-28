@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,15 @@
 		60F9F5242610FBE800ACFB7F /* RecipeMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */; };
 		60F9F52C2610FD5400ACFB7F /* RecipeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F52B2610FD5400ACFB7F /* RecipeUseCase.swift */; };
 		60F9F538261103D000ACFB7F /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F537261103D000ACFB7F /* RecipeListViewModel.swift */; };
+		60F9F543261118CE00ACFB7F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 60F9F542261118CE00ACFB7F /* Kingfisher */; };
+		60F9F54C261118E400ACFB7F /* ImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F54B261118E400ACFB7F /* ImageRepresentable.swift */; };
+		60F9F5542611192200ACFB7F /* UIImage+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5532611192200ACFB7F /* UIImage+LoadImage.swift */; };
+		60F9F55B26111C9600ACFB7F /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F55926111C9600ACFB7F /* RecipeCell.swift */; };
+		60F9F55C26111C9600ACFB7F /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F9F55A26111C9600ACFB7F /* RecipeCell.xib */; };
+		60F9F56426111CB200ACFB7F /* RecipeCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F56326111CB200ACFB7F /* RecipeCellRepresentable.swift */; };
+		60F9F56F261123E300ACFB7F /* Recipe+Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F56E261123E300ACFB7F /* Recipe+Representable.swift */; };
+		60F9F5742611281D00ACFB7F /* TableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5732611281D00ACFB7F /* TableView+Helpers.swift */; };
+		60F9F5792611284900ACFB7F /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5782611284900ACFB7F /* NSObject+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +154,14 @@
 		60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMainModel.swift; sourceTree = "<group>"; };
 		60F9F52B2610FD5400ACFB7F /* RecipeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUseCase.swift; sourceTree = "<group>"; };
 		60F9F537261103D000ACFB7F /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		60F9F54B261118E400ACFB7F /* ImageRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepresentable.swift; sourceTree = "<group>"; };
+		60F9F5532611192200ACFB7F /* UIImage+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LoadImage.swift"; sourceTree = "<group>"; };
+		60F9F55926111C9600ACFB7F /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		60F9F55A26111C9600ACFB7F /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
+		60F9F56326111CB200ACFB7F /* RecipeCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellRepresentable.swift; sourceTree = "<group>"; };
+		60F9F56E261123E300ACFB7F /* Recipe+Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Representable.swift"; sourceTree = "<group>"; };
+		60F9F5732611281D00ACFB7F /* TableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Helpers.swift"; sourceTree = "<group>"; };
+		60F9F5782611284900ACFB7F /* NSObject+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F9F543261118CE00ACFB7F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +201,7 @@
 		604563A1260FA7DF00B3A203 /* ViewRelated */ = {
 			isa = PBXGroup;
 			children = (
+				60F9F547261118D500ACFB7F /* Protocols */,
 				6045642B260FCBE100B3A203 /* BaseClasses */,
 				60456408260FC86900B3A203 /* MainTabBar */,
 				604564AF260FDA3300B3A203 /* LoginScene */,
@@ -321,6 +340,9 @@
 				60456450260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift */,
 				6045647C260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift */,
 				60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */,
+				60F9F5532611192200ACFB7F /* UIImage+LoadImage.swift */,
+				60F9F5732611281D00ACFB7F /* TableView+Helpers.swift */,
+				60F9F5782611284900ACFB7F /* NSObject+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +358,7 @@
 		60456487260FD49600B3A203 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				60F9F55826111C3600ACFB7F /* Cells */,
 				60456488260FD4AB00B3A203 /* RecipeListViewController.swift */,
 				60456489260FD4AB00B3A203 /* RecipeListViewController.xib */,
 			);
@@ -552,6 +575,25 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		60F9F547261118D500ACFB7F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F54B261118E400ACFB7F /* ImageRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		60F9F55826111C3600ACFB7F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F55926111C9600ACFB7F /* RecipeCell.swift */,
+				60F9F55A26111C9600ACFB7F /* RecipeCell.xib */,
+				60F9F56326111CB200ACFB7F /* RecipeCellRepresentable.swift */,
+				60F9F56E261123E300ACFB7F /* Recipe+Representable.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -570,6 +612,9 @@
 			dependencies = (
 			);
 			name = RecipeApp;
+			packageProductDependencies = (
+				60F9F542261118CE00ACFB7F /* Kingfisher */,
+			);
 			productName = RecipeApp;
 			productReference = 608BB7A8260F9C01003DF558 /* RecipeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -641,6 +686,9 @@
 				Base,
 			);
 			mainGroup = 608BB79F260F9C00003DF558;
+			packageReferences = (
+				60F9F541261118CE00ACFB7F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 608BB7A9260F9C01003DF558 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -663,6 +711,7 @@
 				60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */,
 				60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */,
 				608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */,
+				60F9F55C26111C9600ACFB7F /* RecipeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,8 +778,10 @@
 				608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */,
 				60456445260FCD1C00B3A203 /* Variable.swift in Sources */,
 				6045648A260FD4AB00B3A203 /* RecipeListViewController.swift in Sources */,
+				60F9F5792611284900ACFB7F /* NSObject+Helpers.swift in Sources */,
 				604563EC260FB4E200B3A203 /* NetworkError.swift in Sources */,
 				604563F2260FC1E100B3A203 /* Environment.swift in Sources */,
+				60F9F5542611192200ACFB7F /* UIImage+LoadImage.swift in Sources */,
 				6045639D260FA7CE00B3A203 /* Assets.swift in Sources */,
 				604563BA260FB07000B3A203 /* JSONParameterEncoding.swift in Sources */,
 				60456435260FCCB900B3A203 /* BaseVeiwModel.swift in Sources */,
@@ -741,14 +792,18 @@
 				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
 				60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */,
 				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
+				60F9F56426111CB200ACFB7F /* RecipeCellRepresentable.swift in Sources */,
 				60F9F5242610FBE800ACFB7F /* RecipeMainModel.swift in Sources */,
 				604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */,
+				60F9F5742611281D00ACFB7F /* TableView+Helpers.swift in Sources */,
+				60F9F55B26111C9600ACFB7F /* RecipeCell.swift in Sources */,
 				60456451260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift in Sources */,
 				60F9F538261103D000ACFB7F /* RecipeListViewModel.swift in Sources */,
 				60456441260FCD1C00B3A203 /* BehaviorSubject.swift in Sources */,
 				60456483260FD43100B3A203 /* RecipeListCoordinator.swift in Sources */,
 				604563C9260FB10C00B3A203 /* HTTPMethod.swift in Sources */,
 				60456444260FCD1C00B3A203 /* Observer.swift in Sources */,
+				60F9F54C261118E400ACFB7F /* ImageRepresentable.swift in Sources */,
 				60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */,
 				60456400260FC80C00B3A203 /* Coordinator.swift in Sources */,
 				60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */,
@@ -770,6 +825,7 @@
 				604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */,
 				60456446260FCD1C00B3A203 /* Observable.swift in Sources */,
 				604563C4260FB0FB00B3A203 /* EndPointType.swift in Sources */,
+				60F9F56F261123E300ACFB7F /* Recipe+Representable.swift in Sources */,
 				60456427260FCAD700B3A203 /* TabBarCoordinator.swift in Sources */,
 				604563D3260FB13900B3A203 /* NetworkRouterProtocol.swift in Sources */,
 				6045647D260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift in Sources */,
@@ -871,7 +927,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -926,7 +982,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1098,6 +1154,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60F9F541261118CE00ACFB7F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60F9F542261118CE00ACFB7F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F9F541261118CE00ACFB7F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 608BB7A0260F9C00003DF558 /* Project object */;
 }

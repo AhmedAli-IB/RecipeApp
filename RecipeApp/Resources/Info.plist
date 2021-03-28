@@ -60,5 +60,7 @@
 	</array>
 	<key>SERVER_URL</key>
 	<string>api.npoint.io/</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
