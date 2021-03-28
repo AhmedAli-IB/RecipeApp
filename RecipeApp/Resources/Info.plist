@@ -59,6 +59,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>SERVER_URL</key>
-	<string>https://api.npoint.io/</string>
+	<string>api.npoint.io/</string>
 </dict>
 </plist>

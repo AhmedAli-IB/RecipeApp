@@ -7,9 +7,17 @@
 
 import UIKit
 
-class RecipeListViewController: UIViewController {
-
+class RecipeListViewController: BaseViewController {
+    
+    // MARK: - Properties
+    //
+    let viewModel = RecipeListViewModel()
+    // MARK: - Lifecycle
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindErrorState(to: viewModel)
+        bindLoadingState(to: viewModel)
+        viewModel.loadRecipes()
     }
 }
