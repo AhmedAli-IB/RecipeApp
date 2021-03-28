@@ -21,6 +21,35 @@
 		604563EC260FB4E200B3A203 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563EB260FB4E200B3A203 /* NetworkError.swift */; };
 		604563F2260FC1E100B3A203 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563F1260FC1E100B3A203 /* Environment.swift */; };
 		604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563F9260FC32100B3A203 /* RecipeEndPoint.swift */; };
+		60456400260FC80C00B3A203 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563FF260FC80C00B3A203 /* Coordinator.swift */; };
+		6045640A260FC94000B3A203 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456409260FC94000B3A203 /* AppTab.swift */; };
+		60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456411260FC9DC00B3A203 /* MainTabBarController.swift */; };
+		60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60456416260FCA1B00B3A203 /* ColorPalette.xcassets */; };
+		60456427260FCAD700B3A203 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456426260FCAD700B3A203 /* TabBarCoordinator.swift */; };
+		6045642D260FCC1800B3A203 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045642C260FCC1800B3A203 /* BaseViewController.swift */; };
+		60456435260FCCB900B3A203 /* BaseVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456434260FCCB900B3A203 /* BaseVeiwModel.swift */; };
+		60456441260FCD1C00B3A203 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643B260FCD1C00B3A203 /* BehaviorSubject.swift */; };
+		60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643C260FCD1C00B3A203 /* ObservationToken.swift */; };
+		60456443260FCD1C00B3A203 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643D260FCD1C00B3A203 /* PublishSubject.swift */; };
+		60456444260FCD1C00B3A203 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643E260FCD1C00B3A203 /* Observer.swift */; };
+		60456445260FCD1C00B3A203 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643F260FCD1C00B3A203 /* Variable.swift */; };
+		60456446260FCD1C00B3A203 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456440260FCD1C00B3A203 /* Observable.swift */; };
+		6045644B260FCD2900B3A203 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045644A260FCD2900B3A203 /* State.swift */; };
+		60456451260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456450260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift */; };
+		6045647D260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045647C260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift */; };
+		60456483260FD43100B3A203 /* RecipeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456482260FD43100B3A203 /* RecipeListCoordinator.swift */; };
+		6045648A260FD4AB00B3A203 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456488260FD4AB00B3A203 /* RecipeListViewController.swift */; };
+		6045648B260FD4AB00B3A203 /* RecipeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60456489260FD4AB00B3A203 /* RecipeListViewController.xib */; };
+		60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456493260FD6EF00B3A203 /* FavoriteViewController.swift */; };
+		60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60456494260FD6EF00B3A203 /* FavoriteViewController.xib */; };
+		604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */; };
+		604564A8260FD80000B3A203 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */; };
+		604564B2260FDA4F00B3A203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564B0260FDA4F00B3A203 /* LoginViewController.swift */; };
+		604564B3260FDA4F00B3A203 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604564B1260FDA4F00B3A203 /* LoginViewController.xib */; };
+		604564C9260FE6EA00B3A203 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564C8260FE6EA00B3A203 /* UserDefaults.swift */; };
+		604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564D0260FE77500B3A203 /* UserDefaultsKeys.swift */; };
+		604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564D9260FE8B200B3A203 /* UserDefaults+Services.swift */; };
+		604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564DE260FEB1C00B3A203 /* AuthCoordinator.swift */; };
 		608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AB260F9C01003DF558 /* AppDelegate.swift */; };
 		608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BB7AD260F9C01003DF558 /* SceneDelegate.swift */; };
 		608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B4260F9C02003DF558 /* Assets.xcassets */; };
@@ -59,6 +88,35 @@
 		604563EB260FB4E200B3A203 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		604563F1260FC1E100B3A203 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		604563F9260FC32100B3A203 /* RecipeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEndPoint.swift; sourceTree = "<group>"; };
+		604563FF260FC80C00B3A203 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		60456409260FC94000B3A203 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		60456411260FC9DC00B3A203 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		60456416260FCA1B00B3A203 /* ColorPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorPalette.xcassets; sourceTree = "<group>"; };
+		60456426260FCAD700B3A203 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		6045642C260FCC1800B3A203 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		60456434260FCCB900B3A203 /* BaseVeiwModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVeiwModel.swift; sourceTree = "<group>"; };
+		6045643B260FCD1C00B3A203 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
+		6045643C260FCD1C00B3A203 /* ObservationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationToken.swift; sourceTree = "<group>"; };
+		6045643D260FCD1C00B3A203 /* PublishSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
+		6045643E260FCD1C00B3A203 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		6045643F260FCD1C00B3A203 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		60456440260FCD1C00B3A203 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		6045644A260FCD2900B3A203 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		60456450260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController.swift+Loadding+Alert.swift"; sourceTree = "<group>"; };
+		6045647C260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarItem + ImageOnly.swift"; sourceTree = "<group>"; };
+		60456482260FD43100B3A203 /* RecipeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListCoordinator.swift; sourceTree = "<group>"; };
+		60456488260FD4AB00B3A203 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		60456489260FD4AB00B3A203 /* RecipeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListViewController.xib; sourceTree = "<group>"; };
+		60456493260FD6EF00B3A203 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		60456494260FD6EF00B3A203 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
+		604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		604564B0260FDA4F00B3A203 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		604564B1260FDA4F00B3A203 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		604564C8260FE6EA00B3A203 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		604564D0260FE77500B3A203 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		604564D9260FE8B200B3A203 /* UserDefaults+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Services.swift"; sourceTree = "<group>"; };
+		604564DE260FEB1C00B3A203 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		608BB7A8260F9C01003DF558 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608BB7AB260F9C01003DF558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		608BB7AD260F9C01003DF558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +165,12 @@
 		604563A1260FA7DF00B3A203 /* ViewRelated */ = {
 			isa = PBXGroup;
 			children = (
+				6045642B260FCBE100B3A203 /* BaseClasses */,
+				60456408260FC86900B3A203 /* MainTabBar */,
+				60456407260FC85900B3A203 /* Landing */,
+				604564AF260FDA3300B3A203 /* Login */,
 				604563A2260FA7F700B3A203 /* RecipesList */,
+				60456492260FD59A00B3A203 /* Favorite */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
@@ -115,6 +178,8 @@
 		604563A2260FA7F700B3A203 /* RecipesList */ = {
 			isa = PBXGroup;
 			children = (
+				60456481260FD40F00B3A203 /* Coordinator */,
+				60456487260FD49600B3A203 /* View */,
 			);
 			path = RecipesList;
 			sourceTree = "<group>";
@@ -179,6 +244,160 @@
 			path = EndPint;
 			sourceTree = "<group>";
 		};
+		604563FE260FC7F800B3A203 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6045643A260FCD0000B3A203 /* Coordinator */,
+				60456439260FCCF000B3A203 /* Observers */,
+				6045644A260FCD2900B3A203 /* State.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		60456407260FC85900B3A203 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		60456408260FC86900B3A203 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				60456409260FC94000B3A203 /* AppTab.swift */,
+				60456411260FC9DC00B3A203 /* MainTabBarController.swift */,
+				60456426260FCAD700B3A203 /* TabBarCoordinator.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		6045642B260FCBE100B3A203 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6045642C260FCC1800B3A203 /* BaseViewController.swift */,
+				60456434260FCCB900B3A203 /* BaseVeiwModel.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		60456439260FCCF000B3A203 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				6045643B260FCD1C00B3A203 /* BehaviorSubject.swift */,
+				60456440260FCD1C00B3A203 /* Observable.swift */,
+				6045643C260FCD1C00B3A203 /* ObservationToken.swift */,
+				6045643E260FCD1C00B3A203 /* Observer.swift */,
+				6045643D260FCD1C00B3A203 /* PublishSubject.swift */,
+				6045643F260FCD1C00B3A203 /* Variable.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		6045643A260FCD0000B3A203 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				604563FF260FC80C00B3A203 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6045644F260FCD5600B3A203 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60456450260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift */,
+				6045647C260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60456481260FD40F00B3A203 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				60456482260FD43100B3A203 /* RecipeListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		60456487260FD49600B3A203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60456488260FD4AB00B3A203 /* RecipeListViewController.swift */,
+				60456489260FD4AB00B3A203 /* RecipeListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60456492260FD59A00B3A203 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6045649E260FD70200B3A203 /* Coordinator */,
+				6045649D260FD6FB00B3A203 /* View */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		6045649D260FD6FB00B3A203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60456493260FD6EF00B3A203 /* FavoriteViewController.swift */,
+				60456494260FD6EF00B3A203 /* FavoriteViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6045649E260FD70200B3A203 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		604564AF260FDA3300B3A203 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				604564BB260FDA5900B3A203 /* Coordinator */,
+				604564BA260FDA5400B3A203 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		604564BA260FDA5400B3A203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				604564B0260FDA4F00B3A203 /* LoginViewController.swift */,
+				604564B1260FDA4F00B3A203 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		604564BB260FDA5900B3A203 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				604564DE260FEB1C00B3A203 /* AuthCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		604564C7260FE6C000B3A203 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				604564D5260FE78000B3A203 /* UserDefaults */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		604564D5260FE78000B3A203 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				604564C8260FE6EA00B3A203 /* UserDefaults.swift */,
+				604564D0260FE77500B3A203 /* UserDefaultsKeys.swift */,
+				604564D9260FE8B200B3A203 /* UserDefaults+Services.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		608BB79F260F9C00003DF558 = {
 			isa = PBXGroup;
 			children = (
@@ -202,9 +421,11 @@
 		608BB7AA260F9C01003DF558 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				6045644F260FCD5600B3A203 /* Extensions */,
 				608BB7FE260FA3B7003DF558 /* Resources */,
 				608BB7FF260FA3DC003DF558 /* Classes */,
 				604563A6260FACEA00B3A203 /* Networking */,
+				604564C7260FE6C000B3A203 /* Storage */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -230,8 +451,9 @@
 			children = (
 				608BB7B9260F9C02003DF558 /* Info.plist */,
 				608BB7B4260F9C02003DF558 /* Assets.xcassets */,
-				608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */,
+				60456416260FCA1B00B3A203 /* ColorPalette.xcassets */,
 				60456398260FA76A00B3A203 /* Generated */,
+				608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -239,6 +461,7 @@
 		608BB7FF260FA3DC003DF558 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				604563FE260FC7F800B3A203 /* Tools */,
 				604563A1260FA7DF00B3A203 /* ViewRelated */,
 				608BB7AB260F9C01003DF558 /* AppDelegate.swift */,
 				608BB7AD260F9C01003DF558 /* SceneDelegate.swift */,
@@ -351,7 +574,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6045648B260FD4AB00B3A203 /* RecipeListViewController.xib in Resources */,
 				608BB7B8260F9C02003DF558 /* LaunchScreen.storyboard in Resources */,
+				604564B3260FDA4F00B3A203 /* LoginViewController.xib in Resources */,
+				60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */,
+				60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */,
 				608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,21 +644,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */,
+				60456445260FCD1C00B3A203 /* Variable.swift in Sources */,
+				6045648A260FD4AB00B3A203 /* RecipeListViewController.swift in Sources */,
 				604563EC260FB4E200B3A203 /* NetworkError.swift in Sources */,
 				604563F2260FC1E100B3A203 /* Environment.swift in Sources */,
 				6045639D260FA7CE00B3A203 /* Assets.swift in Sources */,
 				604563BA260FB07000B3A203 /* JSONParameterEncoding.swift in Sources */,
+				60456435260FCCB900B3A203 /* BaseVeiwModel.swift in Sources */,
+				6045642D260FCC1800B3A203 /* BaseViewController.swift in Sources */,
 				604563E7260FB44400B3A203 /* NetworkManager.swift in Sources */,
 				604563B2260FB05100B3A203 /* ParameterEncoding.swift in Sources */,
 				604563E2260FB2D700B3A203 /* Router.swift in Sources */,
+				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
+				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
 				604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */,
+				60456451260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift in Sources */,
+				60456441260FCD1C00B3A203 /* BehaviorSubject.swift in Sources */,
+				60456483260FD43100B3A203 /* RecipeListCoordinator.swift in Sources */,
 				604563C9260FB10C00B3A203 /* HTTPMethod.swift in Sources */,
+				60456444260FCD1C00B3A203 /* Observer.swift in Sources */,
+				60456400260FC80C00B3A203 /* Coordinator.swift in Sources */,
+				60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */,
+				60456443260FCD1C00B3A203 /* PublishSubject.swift in Sources */,
+				6045640A260FC94000B3A203 /* AppTab.swift in Sources */,
+				604564A8260FD80000B3A203 /* ApplicationCoordinator.swift in Sources */,
+				604564C9260FE6EA00B3A203 /* UserDefaults.swift in Sources */,
+				604564B2260FDA4F00B3A203 /* LoginViewController.swift in Sources */,
 				604563D8260FB1E200B3A203 /* URLSessionProtocol.swift in Sources */,
+				604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */,
+				60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */,
+				604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */,
 				604563BF260FB08C00B3A203 /* URLParameterEncoding.swift in Sources */,
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 				604563CE260FB12200B3A203 /* HttpTask.swift in Sources */,
+				604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */,
+				60456446260FCD1C00B3A203 /* Observable.swift in Sources */,
 				604563C4260FB0FB00B3A203 /* EndPointType.swift in Sources */,
+				60456427260FCAD700B3A203 /* TabBarCoordinator.swift in Sources */,
 				604563D3260FB13900B3A203 /* NetworkRouterProtocol.swift in Sources */,
+				6045647D260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift in Sources */,
+				6045644B260FCD2900B3A203 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
