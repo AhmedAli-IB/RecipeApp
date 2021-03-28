@@ -57,6 +57,9 @@
 		60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */; };
 		60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */; };
 		60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4CE2610CFD400ACFB7F /* User.swift */; };
+		60F9F4D72610D10B00ACFB7F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */; };
+		60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5072610DEDB00ACFB7F /* ValidatorFactory.swift */; };
+		60F9F5192610E48900ACFB7F /* RecipeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5182610E48900ACFB7F /* RecipeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +136,9 @@
 		60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
 		60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		60F9F4CE2610CFD400ACFB7F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		60F9F5072610DEDB00ACFB7F /* ValidatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
+		60F9F5182610E48900ACFB7F /* RecipeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +258,8 @@
 		604563FE260FC7F800B3A203 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				60F9F5172610E47100ACFB7F /* UIKit */,
+				60F9F5062610DEBB00ACFB7F /* Validators */,
 				6045644F260FCD5600B3A203 /* Extensions */,
 				6045643A260FCD0000B3A203 /* Coordinator */,
 				60456439260FCCF000B3A203 /* Observers */,
@@ -506,8 +514,25 @@
 		60F9F4CD2610CF7B00ACFB7F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		60F9F5062610DEBB00ACFB7F /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F5072610DEDB00ACFB7F /* ValidatorFactory.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		60F9F5172610E47100ACFB7F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F5182610E48900ACFB7F /* RecipeTextField.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -697,6 +722,7 @@
 				604563B2260FB05100B3A203 /* ParameterEncoding.swift in Sources */,
 				604563E2260FB2D700B3A203 /* Router.swift in Sources */,
 				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
+				60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */,
 				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
 				604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */,
 				60456451260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift in Sources */,
@@ -715,6 +741,7 @@
 				604563D8260FB1E200B3A203 /* URLSessionProtocol.swift in Sources */,
 				604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */,
 				60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */,
+				60F9F5192610E48900ACFB7F /* RecipeTextField.swift in Sources */,
 				604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */,
 				60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */,
 				604563BF260FB08C00B3A203 /* URLParameterEncoding.swift in Sources */,
@@ -728,6 +755,7 @@
 				604563D3260FB13900B3A203 /* NetworkRouterProtocol.swift in Sources */,
 				6045647D260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift in Sources */,
 				6045644B260FCD2900B3A203 /* State.swift in Sources */,
+				60F9F4D72610D10B00ACFB7F /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
