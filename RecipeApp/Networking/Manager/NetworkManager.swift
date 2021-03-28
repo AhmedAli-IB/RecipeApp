@@ -22,7 +22,7 @@ class NetworkManager<G: EndPointType> {
     /// - Parameters:
     ///   - api: End pointe to extcue
     ///   - completion: Result with success data or falilure error
-    public func request<T: Decodable>(api: G, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    func request<T: Decodable>(api: G, completion: @escaping (Result<T, NetworkError>) -> Void) {
         
         router.request(api) { data, response, error in
             
