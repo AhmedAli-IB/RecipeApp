@@ -55,6 +55,8 @@
 		608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B4260F9C02003DF558 /* Assets.xcassets */; };
 		608BB7B8260F9C02003DF558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */; };
 		60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */; };
+		60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */; };
+		60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4CE2610CFD400ACFB7F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,8 @@
 		608BB7C9260F9C02003DF558 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608BB7CF260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
+		60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		60F9F4CE2610CFD400ACFB7F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,21 +173,20 @@
 			children = (
 				6045642B260FCBE100B3A203 /* BaseClasses */,
 				60456408260FC86900B3A203 /* MainTabBar */,
-				60456407260FC85900B3A203 /* Landing */,
-				604564AF260FDA3300B3A203 /* Login */,
-				604563A2260FA7F700B3A203 /* RecipesList */,
-				60456492260FD59A00B3A203 /* Favorite */,
+				604564AF260FDA3300B3A203 /* LoginScene */,
+				604563A2260FA7F700B3A203 /* RecipesListScene */,
+				60456492260FD59A00B3A203 /* FavoriteScene */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
 		};
-		604563A2260FA7F700B3A203 /* RecipesList */ = {
+		604563A2260FA7F700B3A203 /* RecipesListScene */ = {
 			isa = PBXGroup;
 			children = (
 				60456481260FD40F00B3A203 /* Coordinator */,
 				60456487260FD49600B3A203 /* View */,
 			);
-			path = RecipesList;
+			path = RecipesListScene;
 			sourceTree = "<group>";
 		};
 		604563A6260FACEA00B3A203 /* Networking */ = {
@@ -246,22 +249,15 @@
 			path = EndPint;
 			sourceTree = "<group>";
 		};
-		604563FE260FC7F800B3A203 /* Tools */ = {
+		604563FE260FC7F800B3A203 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6045644F260FCD5600B3A203 /* Extensions */,
 				6045643A260FCD0000B3A203 /* Coordinator */,
 				60456439260FCCF000B3A203 /* Observers */,
 				6045644A260FCD2900B3A203 /* State.swift */,
 			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		60456407260FC85900B3A203 /* Landing */ = {
-			isa = PBXGroup;
-			children = (
-				604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */,
-			);
-			path = Landing;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		60456408260FC86900B3A203 /* MainTabBar */ = {
@@ -331,13 +327,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		60456492260FD59A00B3A203 /* Favorite */ = {
+		60456492260FD59A00B3A203 /* FavoriteScene */ = {
 			isa = PBXGroup;
 			children = (
 				6045649E260FD70200B3A203 /* Coordinator */,
 				6045649D260FD6FB00B3A203 /* View */,
 			);
-			path = Favorite;
+			path = FavoriteScene;
 			sourceTree = "<group>";
 		};
 		6045649D260FD6FB00B3A203 /* View */ = {
@@ -357,13 +353,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		604564AF260FDA3300B3A203 /* Login */ = {
+		604564AF260FDA3300B3A203 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
 				604564BB260FDA5900B3A203 /* Coordinator */,
 				604564BA260FDA5400B3A203 /* View */,
+				60F9F4AF2610BD8500ACFB7F /* ViewModel */,
 			);
-			path = Login;
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 		604564BA260FDA5400B3A203 /* View */ = {
@@ -424,11 +421,12 @@
 		608BB7AA260F9C01003DF558 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
-				6045644F260FCD5600B3A203 /* Extensions */,
-				608BB7FE260FA3B7003DF558 /* Resources */,
-				608BB7FF260FA3DC003DF558 /* Classes */,
+				60F9F4BE2610CA7500ACFB7F /* Application */,
+				608BB7FF260FA3DC003DF558 /* Presentation */,
+				60F9F4CB2610CF6800ACFB7F /* Domain */,
 				604563A6260FACEA00B3A203 /* Networking */,
 				604564C7260FE6C000B3A203 /* Storage */,
+				608BB7FE260FA3B7003DF558 /* Resources */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -461,15 +459,55 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		608BB7FF260FA3DC003DF558 /* Classes */ = {
+		608BB7FF260FA3DC003DF558 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				604563FE260FC7F800B3A203 /* Tools */,
+				604563FE260FC7F800B3A203 /* Utils */,
 				604563A1260FA7DF00B3A203 /* ViewRelated */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		60F9F4AF2610BD8500ACFB7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60F9F4BE2610CA7500ACFB7F /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				608BB7AB260F9C01003DF558 /* AppDelegate.swift */,
 				608BB7AD260F9C01003DF558 /* SceneDelegate.swift */,
+				604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */,
 			);
-			path = Classes;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		60F9F4CB2610CF6800ACFB7F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F4CD2610CF7B00ACFB7F /* UseCases */,
+				60F9F4CC2610CF7000ACFB7F /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		60F9F4CC2610CF7000ACFB7F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F4CE2610CFD400ACFB7F /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		60F9F4CD2610CF7B00ACFB7F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -666,6 +704,7 @@
 				60456483260FD43100B3A203 /* RecipeListCoordinator.swift in Sources */,
 				604563C9260FB10C00B3A203 /* HTTPMethod.swift in Sources */,
 				60456444260FCD1C00B3A203 /* Observer.swift in Sources */,
+				60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */,
 				60456400260FC80C00B3A203 /* Coordinator.swift in Sources */,
 				60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */,
 				60456443260FCD1C00B3A203 /* PublishSubject.swift in Sources */,
@@ -677,6 +716,7 @@
 				604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */,
 				60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */,
 				604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */,
+				60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */,
 				604563BF260FB08C00B3A203 /* URLParameterEncoding.swift in Sources */,
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 				604563CE260FB12200B3A203 /* HttpTask.swift in Sources */,
