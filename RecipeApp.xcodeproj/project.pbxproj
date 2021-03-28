@@ -72,6 +72,8 @@
 		60F9F56F261123E300ACFB7F /* Recipe+Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F56E261123E300ACFB7F /* Recipe+Representable.swift */; };
 		60F9F5742611281D00ACFB7F /* TableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5732611281D00ACFB7F /* TableView+Helpers.swift */; };
 		60F9F5792611284900ACFB7F /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5782611284900ACFB7F /* NSObject+Helpers.swift */; };
+		60F9F589261137C300ACFB7F /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F587261137C300ACFB7F /* RecipeDetailsViewController.swift */; };
+		60F9F58A261137C300ACFB7F /* RecipeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F9F588261137C300ACFB7F /* RecipeDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,8 @@
 		60F9F56E261123E300ACFB7F /* Recipe+Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Representable.swift"; sourceTree = "<group>"; };
 		60F9F5732611281D00ACFB7F /* TableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Helpers.swift"; sourceTree = "<group>"; };
 		60F9F5782611284900ACFB7F /* NSObject+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
+		60F9F587261137C300ACFB7F /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		60F9F588261137C300ACFB7F /* RecipeDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 				60456408260FC86900B3A203 /* MainTabBar */,
 				604564AF260FDA3300B3A203 /* LoginScene */,
 				604563A2260FA7F700B3A203 /* RecipesListScene */,
+				60F9F5832611377B00ACFB7F /* RecipeDetailsScene */,
 				60456492260FD59A00B3A203 /* FavoriteScene */,
 			);
 			path = ViewRelated;
@@ -594,6 +599,31 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		60F9F5832611377B00ACFB7F /* RecipeDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F5852611379100ACFB7F /* View */,
+				60F9F5842611378A00ACFB7F /* ViewModel */,
+			);
+			path = RecipeDetailsScene;
+			sourceTree = "<group>";
+		};
+		60F9F5842611378A00ACFB7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60F9F5852611379100ACFB7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60F9F587261137C300ACFB7F /* RecipeDetailsViewController.swift */,
+				60F9F588261137C300ACFB7F /* RecipeDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -710,6 +740,7 @@
 				604564B3260FDA4F00B3A203 /* LoginViewController.xib in Resources */,
 				60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */,
 				60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */,
+				60F9F58A261137C300ACFB7F /* RecipeDetailsViewController.xib in Resources */,
 				608BB7B5260F9C02003DF558 /* Assets.xcassets in Resources */,
 				60F9F55C26111C9600ACFB7F /* RecipeCell.xib in Resources */,
 			);
@@ -790,6 +821,7 @@
 				604563B2260FB05100B3A203 /* ParameterEncoding.swift in Sources */,
 				604563E2260FB2D700B3A203 /* Router.swift in Sources */,
 				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
+				60F9F589261137C300ACFB7F /* RecipeDetailsViewController.swift in Sources */,
 				60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */,
 				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
 				60F9F56426111CB200ACFB7F /* RecipeCellRepresentable.swift in Sources */,
