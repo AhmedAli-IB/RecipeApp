@@ -60,6 +60,7 @@
 		60F9F4D72610D10B00ACFB7F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */; };
 		60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5072610DEDB00ACFB7F /* ValidatorFactory.swift */; };
 		60F9F5192610E48900ACFB7F /* RecipeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5182610E48900ACFB7F /* RecipeTextField.swift */; };
+		60F9F5242610FBE800ACFB7F /* RecipeMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		60F9F5072610DEDB00ACFB7F /* ValidatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
 		60F9F5182610E48900ACFB7F /* RecipeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTextField.swift; sourceTree = "<group>"; };
+		60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -507,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				60F9F4CE2610CFD400ACFB7F /* User.swift */,
+				60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
 				60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */,
 				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
+				60F9F5242610FBE800ACFB7F /* RecipeMainModel.swift in Sources */,
 				604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */,
 				60456451260FCD7200B3A203 /* UIViewController.swift+Loadding+Alert.swift in Sources */,
 				60456441260FCD1C00B3A203 /* BehaviorSubject.swift in Sources */,
