@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="RecipeApp" customModuleProvider="target">
             <connections>
-                <outlet property="emailTF" destination="g8Z-0q-GL8" id="e6J-ID-efc"/>
+                <outlet property="emailTextField" destination="g8Z-0q-GL8" id="W0h-HF-vEP"/>
                 <outlet property="loginButton" destination="nfM-ZN-X1k" id="zDz-e8-RiO"/>
                 <outlet property="loginContainerView" destination="XlY-yU-RYe" id="bAX-EN-Wwq"/>
-                <outlet property="passwordTF" destination="CSo-Ch-PTQ" id="sxO-HA-O4g"/>
+                <outlet property="passwordTextField" destination="CSo-Ch-PTQ" id="4qK-7o-9VU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,12 +44,12 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nNR-S1-eoW">
                                                     <rect key="frame" x="16" y="36" width="342" height="128"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-0q-GL8">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-0q-GL8" customClass="RecipeTextField" customModule="RecipeApp" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="342" height="51.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-Ch-PTQ">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-Ch-PTQ" customClass="RecipeTextField" customModule="RecipeApp" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="76.5" width="342" height="51.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -114,6 +114,14 @@
             <point key="canvasLocation" x="122" y="119"/>
         </view>
     </objects>
+    <designables>
+        <designable name="CSo-Ch-PTQ">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
+        <designable name="g8Z-0q-GL8">
+            <size key="intrinsicContentSize" width="119.5" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="food-image" width="4000" height="2667"/>
         <namedColor name="Primary-color">

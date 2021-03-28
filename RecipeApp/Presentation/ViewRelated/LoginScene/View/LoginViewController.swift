@@ -12,29 +12,50 @@ class LoginViewController: BaseViewController {
     // MARK: - Outlets
     //
     @IBOutlet private weak var loginContainerView: UIView!
-    @IBOutlet private weak var emailTF: UITextField!
-    @IBOutlet private weak var passwordTF: UITextField!
+    @IBOutlet private weak var emailTextField: RecipeTextField!
+    @IBOutlet private weak var passwordTextField: RecipeTextField!
     @IBOutlet private weak var loginButton: UIButton!
     
     // MARK: - Properties
     //
      var coordinator: AuthCoordinatorProtocol?
-    
+     private let viewModel: LoginViewModel = LoginViewModel()
     // MARK: - Lifecycle
     //
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAppearance()
+        configureViewModel()
     }
 }
-// MARK: - Configurations
+
+// MARK: - IBActions
 //
 private extension LoginViewController {
     
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        viewModel.submit()
+    }
+}
+
+// MARK: - Configurations
+//
+private extension LoginViewController {
+    /// Configure appearance
+    ///
     func configureAppearance() {
         configureView()
         configureLoginView()
         configureLoginButton()
+    }
+    /// Configure view model
+    ///
+    func configureViewModel() {
+        bindLoadingState(to: viewModel)
+        bindErrorState(to: viewModel)
+        configureOnPasswordChange()
+        configureOnEmailChange()
+        configureSuccessLogin()
     }
     /// Configure super view
     ///
@@ -52,13 +73,27 @@ private extension LoginViewController {
         loginButton.layer.cornerRadius = Constants.loginButtonCornerRadius
     }
 }
-// MARK: - IBActions
+
+// MARK: - Configure View Model
 //
 private extension LoginViewController {
     
-    @IBAction func loginButtonTapped(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: .credentials)
-        coordinator?.reloadLaunchInstructor()
+    func configureOnPasswordChange() {
+        passwordTextField.bind { [weak self] value in
+            self?.viewModel.password = value
+        }
+    }
+    
+    func configureOnEmailChange() {
+        emailTextField.bind { [weak self] value in
+            self?.viewModel.email = value
+        }
+    }
+    
+    func configureSuccessLogin() {
+        viewModel.onSuccessLogin = { [weak self] in
+            self?.coordinator?.reloadLaunchInstructor()
+        }
     }
 }
 
