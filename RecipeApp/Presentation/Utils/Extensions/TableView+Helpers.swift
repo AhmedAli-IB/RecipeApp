@@ -24,4 +24,19 @@ extension UITableView {
         
         return cell
     }
+    
+    /// Register UITableViewHeaderFooterView using a nib.
+    ///
+    func registerHeaderNib<T: UITableViewHeaderFooterView>(_: T.Type) {
+        register(T.loadNib(), forHeaderFooterViewReuseIdentifier: T.classNameWithoutNamespaces)
+    }
+    
+    /// Dequee reusable `HeaderFooterView` with type.
+    ///
+    func dequeueHeaderFooter<T: UITableViewHeaderFooterView>() -> T {
+        guard let header = dequeueReusableHeaderFooterView(withIdentifier: T.classNameWithoutNamespaces) as? T else {
+            fatalError("Unable to get header view")
+        }
+        return header
+    }
 }
