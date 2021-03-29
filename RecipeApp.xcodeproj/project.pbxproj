@@ -35,10 +35,7 @@
 		604563F2260FC1E100B3A203 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563F1260FC1E100B3A203 /* Environment.swift */; };
 		604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563F9260FC32100B3A203 /* RecipeEndPoint.swift */; };
 		60456400260FC80C00B3A203 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604563FF260FC80C00B3A203 /* Coordinator.swift */; };
-		6045640A260FC94000B3A203 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456409260FC94000B3A203 /* AppTab.swift */; };
-		60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456411260FC9DC00B3A203 /* MainTabBarController.swift */; };
 		60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60456416260FCA1B00B3A203 /* ColorPalette.xcassets */; };
-		60456427260FCAD700B3A203 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456426260FCAD700B3A203 /* TabBarCoordinator.swift */; };
 		6045642D260FCC1800B3A203 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045642C260FCC1800B3A203 /* BaseViewController.swift */; };
 		60456435260FCCB900B3A203 /* BaseVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456434260FCCB900B3A203 /* BaseVeiwModel.swift */; };
 		60456441260FCD1C00B3A203 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045643B260FCD1C00B3A203 /* BehaviorSubject.swift */; };
@@ -53,9 +50,6 @@
 		60456483260FD43100B3A203 /* RecipeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456482260FD43100B3A203 /* RecipeListCoordinator.swift */; };
 		6045648A260FD4AB00B3A203 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456488260FD4AB00B3A203 /* RecipeListViewController.swift */; };
 		6045648B260FD4AB00B3A203 /* RecipeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60456489260FD4AB00B3A203 /* RecipeListViewController.xib */; };
-		60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60456493260FD6EF00B3A203 /* FavoriteViewController.swift */; };
-		60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60456494260FD6EF00B3A203 /* FavoriteViewController.xib */; };
-		604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */; };
 		604564A8260FD80000B3A203 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */; };
 		604564B2260FDA4F00B3A203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604564B0260FDA4F00B3A203 /* LoginViewController.swift */; };
 		604564B3260FDA4F00B3A203 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604564B1260FDA4F00B3A203 /* LoginViewController.xib */; };
@@ -136,10 +130,7 @@
 		604563F1260FC1E100B3A203 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		604563F9260FC32100B3A203 /* RecipeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEndPoint.swift; sourceTree = "<group>"; };
 		604563FF260FC80C00B3A203 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		60456409260FC94000B3A203 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
-		60456411260FC9DC00B3A203 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		60456416260FCA1B00B3A203 /* ColorPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorPalette.xcassets; sourceTree = "<group>"; };
-		60456426260FCAD700B3A203 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		6045642C260FCC1800B3A203 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		60456434260FCCB900B3A203 /* BaseVeiwModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVeiwModel.swift; sourceTree = "<group>"; };
 		6045643B260FCD1C00B3A203 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
@@ -154,9 +145,6 @@
 		60456482260FD43100B3A203 /* RecipeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListCoordinator.swift; sourceTree = "<group>"; };
 		60456488260FD4AB00B3A203 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		60456489260FD4AB00B3A203 /* RecipeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListViewController.xib; sourceTree = "<group>"; };
-		60456493260FD6EF00B3A203 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		60456494260FD6EF00B3A203 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
-		6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
 		604564A7260FD80000B3A203 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		604564B0260FDA4F00B3A203 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		604564B1260FDA4F00B3A203 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -275,11 +263,9 @@
 			children = (
 				60F9F547261118D500ACFB7F /* Protocols */,
 				6045642B260FCBE100B3A203 /* BaseClasses */,
-				60456408260FC86900B3A203 /* MainTabBar */,
 				604564AF260FDA3300B3A203 /* LoginScene */,
 				604563A2260FA7F700B3A203 /* RecipesListScene */,
 				60F9F5832611377B00ACFB7F /* RecipeDetailsScene */,
-				60456492260FD59A00B3A203 /* FavoriteScene */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
@@ -367,16 +353,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		60456408260FC86900B3A203 /* MainTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				60456409260FC94000B3A203 /* AppTab.swift */,
-				60456411260FC9DC00B3A203 /* MainTabBarController.swift */,
-				60456426260FCAD700B3A203 /* TabBarCoordinator.swift */,
-			);
-			path = MainTabBar;
-			sourceTree = "<group>";
-		};
 		6045642B260FCBE100B3A203 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,32 +414,6 @@
 				60456489260FD4AB00B3A203 /* RecipeListViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		60456492260FD59A00B3A203 /* FavoriteScene */ = {
-			isa = PBXGroup;
-			children = (
-				6045649E260FD70200B3A203 /* Coordinator */,
-				6045649D260FD6FB00B3A203 /* View */,
-			);
-			path = FavoriteScene;
-			sourceTree = "<group>";
-		};
-		6045649D260FD6FB00B3A203 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				60456493260FD6EF00B3A203 /* FavoriteViewController.swift */,
-				60456494260FD6EF00B3A203 /* FavoriteViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6045649E260FD70200B3A203 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				6045649F260FD71900B3A203 /* FavoriteCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		604564AF260FDA3300B3A203 /* LoginScene */ = {
@@ -815,7 +765,6 @@
 				60456417260FCA1B00B3A203 /* ColorPalette.xcassets in Resources */,
 				604487A32611F1A90067E41D /* DetailsTableViewHeader.xib in Resources */,
 				604487AA2611F3990067E41D /* ImageTableViewCell.xib in Resources */,
-				60456496260FD6EF00B3A203 /* FavoriteViewController.xib in Resources */,
 				604487C12611F4880067E41D /* IngredientsCell.xib in Resources */,
 				604487B12611F3D90067E41D /* DescriptionCell.xib in Resources */,
 				604487B82611F43D0067E41D /* IngredientsTableViewCell.xib in Resources */,
@@ -905,7 +854,6 @@
 				604564DA260FE8B200B3A203 /* UserDefaults+Services.swift in Sources */,
 				60F9F589261137C300ACFB7F /* RecipeDetailsViewController.swift in Sources */,
 				60F9F5082610DEDB00ACFB7F /* ValidatorFactory.swift in Sources */,
-				60456495260FD6EF00B3A203 /* FavoriteViewController.swift in Sources */,
 				60F9F56426111CB200ACFB7F /* RecipeCellRepresentable.swift in Sources */,
 				60F9F5242610FBE800ACFB7F /* RecipeMainModel.swift in Sources */,
 				604563FA260FC32100B3A203 /* RecipeEndPoint.swift in Sources */,
@@ -925,13 +873,11 @@
 				60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */,
 				60456443260FCD1C00B3A203 /* PublishSubject.swift in Sources */,
 				6044878F2611EAA80067E41D /* RecipeDetailsViewModel.swift in Sources */,
-				6045640A260FC94000B3A203 /* AppTab.swift in Sources */,
 				604564A8260FD80000B3A203 /* ApplicationCoordinator.swift in Sources */,
 				604564C9260FE6EA00B3A203 /* UserDefaults.swift in Sources */,
 				604564B2260FDA4F00B3A203 /* LoginViewController.swift in Sources */,
 				604563D8260FB1E200B3A203 /* URLSessionProtocol.swift in Sources */,
 				604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */,
-				60456412260FC9DC00B3A203 /* MainTabBarController.swift in Sources */,
 				60F9F5192610E48900ACFB7F /* RecipeTextField.swift in Sources */,
 				604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */,
 				60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */,
@@ -939,13 +885,11 @@
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 				604563CE260FB12200B3A203 /* HttpTask.swift in Sources */,
 				60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */,
-				604564A0260FD71900B3A203 /* FavoriteCoordinator.swift in Sources */,
 				60BB45D826122C190037FA38 /* String + Helper.swift in Sources */,
 				60456446260FCD1C00B3A203 /* Observable.swift in Sources */,
 				604563C4260FB0FB00B3A203 /* EndPointType.swift in Sources */,
 				60F9F56F261123E300ACFB7F /* Recipe+Representable.swift in Sources */,
 				604487B72611F43D0067E41D /* IngredientsTableViewCell.swift in Sources */,
-				60456427260FCAD700B3A203 /* TabBarCoordinator.swift in Sources */,
 				604563D3260FB13900B3A203 /* NetworkRouterProtocol.swift in Sources */,
 				6045647D260FD3BE00B3A203 /* TabBarItem + ImageOnly.swift in Sources */,
 				6045644B260FCD2900B3A203 /* State.swift in Sources */,

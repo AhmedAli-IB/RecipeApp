@@ -13,11 +13,16 @@ import UIKit
 protocol RecipeListCoordinatorProtocol: class {
     func pushDetailsViewController(recipe: RecipeMainModel)
     func popViewController()
+    func logout()
 }
 // MARK: - RecipeListCoordinator
 //
 final class RecipeListCoordinator: Coordinator {
     
+    // MARK: - Callbacks
+    //
+    var finishFlow: (() -> Void)?
+
     // MARK: - Properties
     //
     var navigationController: UINavigationController
@@ -44,13 +49,11 @@ final class RecipeListCoordinator: Coordinator {
 // MARK: - RecipeListCoordinator + RecipeListCoordinatorProtocol
 //
 extension RecipeListCoordinator: RecipeListCoordinatorProtocol {
-    
     /// Pop view controller
     ///
     func popViewController() {
         self.navigationController.popViewController(animated: true)
     }
-    
     /// Go to recipe details view
     ///
     func pushDetailsViewController(recipe: RecipeMainModel) {
@@ -59,5 +62,9 @@ extension RecipeListCoordinator: RecipeListCoordinatorProtocol {
         recipeDetailsVC.coordinator = self
         self.navigationController.pushViewController(recipeDetailsVC, animated: true)
     }
-    
+    /// Logout from home and return to login screen
+    ///
+    func logout() {
+        finishFlow?()
+    }
 }

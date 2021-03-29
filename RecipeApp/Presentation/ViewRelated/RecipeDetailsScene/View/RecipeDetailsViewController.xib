@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URb-Xs-Sjc">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <viewLayoutGuide key="contentLayoutGuide" id="WRb-va-wgy"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="wKF-kf-BOW"/>
@@ -80,9 +80,9 @@
                 <constraint firstItem="URb-Xs-Sjc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DL1-oT-CED"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="URb-Xs-Sjc" secondAttribute="trailing" id="I7q-J9-D5o"/>
                 <constraint firstAttribute="trailing" secondItem="D5b-U9-x1s" secondAttribute="trailing" id="Qw4-cL-40W"/>
+                <constraint firstAttribute="bottom" secondItem="URb-Xs-Sjc" secondAttribute="bottom" id="TAu-Ef-lQ0"/>
                 <constraint firstItem="URb-Xs-Sjc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WIN-Ws-UNW"/>
                 <constraint firstItem="D5b-U9-x1s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bak-8T-Hhr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="URb-Xs-Sjc" secondAttribute="bottom" id="sqh-f7-cFJ"/>
             </constraints>
             <point key="canvasLocation" x="-116" y="106"/>
         </view>

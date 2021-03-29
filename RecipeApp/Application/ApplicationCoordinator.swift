@@ -15,8 +15,6 @@ class ApplicationCoordinator {
     // MARK: - Properties
     //
     private weak var window: UIWindow?
-    
-    let tabBarController: MainTabBarController = MainTabBarController()
 
     var coordinator: Coordinator!
     
@@ -38,9 +36,13 @@ private extension ApplicationCoordinator {
     /// Run home  flow
     ///
     func runHomeFlow() {
-        window?.rootViewController = tabBarController
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        let homeCoordinator = TabBarCoordinator(tabBarController: tabBarController)
+        let homeCoordinator = RecipeListCoordinator(navigationController: navigationController)
+        homeCoordinator.finishFlow = { [unowned self] in
+            self.start()
+        }
         homeCoordinator.start()
     }
     
