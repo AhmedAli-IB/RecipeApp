@@ -16,7 +16,7 @@ class RecipeListViewController: BaseViewController {
     // MARK: - Properties
     //
     let viewModel = RecipeListViewModel()
-    
+    var coordinator: RecipeListCoordinator?
     // MARK: - Lifecycle
     //
     override func viewDidLoad() {
@@ -40,6 +40,10 @@ extension RecipeListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = viewModel.getCurrentObject(for: indexPath)
+        coordinator?.pushDetailsViewController(recipe: recipe)
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         Constants.rowHeight
     }
@@ -65,6 +69,11 @@ private extension RecipeListViewController {
         let attribute  = [NSAttributedString.Key.foregroundColor: Asset.ColorPalette.primaryColor.color]
         self.navigationController?.navigationBar.titleTextAttributes = attribute
         self.navigationController?.navigationBar.largeTitleTextAttributes = attribute
+        let logoutBarButtonItem = UIBarButtonItem(title: Strings.logout,
+                                                  style: .done,
+                                                  target: self,
+                                                  action: #selector(logoutUser))
+        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
     }
     /// Configure table view
     ///
@@ -89,6 +98,16 @@ private extension RecipeListViewController {
         tableView.registerCellNib(RecipeCell.self)
     }
 }
+
+// MARK: - Private Handlers
+//
+private extension RecipeListViewController {
+    
+    @objc
+     func logoutUser() {
+         print("clicked")
+    }
+}
 // MARK: - Constants
 //
 private extension RecipeListViewController {
@@ -104,5 +123,6 @@ private extension RecipeListViewController {
     
     enum Strings {
         static let title = "Recipes"
+        static let logout = "Logout"
     }
 }

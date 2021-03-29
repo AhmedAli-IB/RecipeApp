@@ -41,11 +41,16 @@ class  RecipeListViewModel: BaseViewModel {
     func getCurrentObject(for indexPath: IndexPath) -> RecipeMainModel {
         return recipes[indexPath.row]
     }
+    /// Logout
+    ///
+    func logout() {
+        UserDefaults.standard.purge()
+    }
 }
 
 // MARK: - Private Handlers
 //
-extension RecipeListViewModel {
+private extension RecipeListViewModel {
     
     func loadRecipes() {
         state.send(.loading)

@@ -11,7 +11,7 @@ import UIKit
 /// `RecipeListCoordinator` responsable for navigation logic in recipe list  flow
 ///
 protocol RecipeListCoordinatorProtocol: class {
-    func pushDetailsViewController()
+    func pushDetailsViewController(recipe: RecipeMainModel)
     func popViewController()
 }
 // MARK: - RecipeListCoordinator
@@ -36,6 +36,7 @@ final class RecipeListCoordinator: Coordinator {
     ///
     private func showRecipeListViewController() {
         let recipeListVC = RecipeListViewController()
+        recipeListVC.coordinator = self
         self.navigationController.setViewControllers([recipeListVC], animated: false)
     }
 }
@@ -44,12 +45,19 @@ final class RecipeListCoordinator: Coordinator {
 //
 extension RecipeListCoordinator: RecipeListCoordinatorProtocol {
     
+    /// Pop view controller
+    ///
     func popViewController() {
         self.navigationController.popViewController(animated: true)
     }
     
-    func pushDetailsViewController() {
-
+    /// Go to recipe details view
+    ///
+    func pushDetailsViewController(recipe: RecipeMainModel) {
+        let viewModel = RecipeDetailsViewModel(recipe: recipe)
+        let recipeDetailsVC = RecipeDetailsViewController(viewModel: viewModel)
+        recipeDetailsVC.coordinator = self
+        self.navigationController.pushViewController(recipeDetailsVC, animated: true)
     }
     
 }
