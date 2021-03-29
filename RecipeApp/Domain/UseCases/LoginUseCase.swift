@@ -45,10 +45,13 @@ private extension LoginUseCase {
 
         switch (email, password) {
         case ("ahmed@gmail.com", "12345678"): return .success(userOne)
-        case ("ali@gmail.com", "@2"): return .success(userTwo)
+        case ("ali@gmail.com", "87654321"): return .success(userTwo)
         default: return .failure(LoginError.invalidCredentials)
         }
     }
+    
+    // MARK: - Handle Login Error
+    //
     enum LoginError: LocalizedError {
         
         case invalidCredentials
