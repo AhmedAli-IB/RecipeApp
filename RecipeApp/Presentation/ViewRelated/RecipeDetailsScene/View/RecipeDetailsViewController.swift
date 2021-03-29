@@ -37,6 +37,11 @@ class RecipeDetailsViewController: BaseViewController {
         configureAppearance()
         viewModel.viewDidLoad()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 // MARK: - IBActions
@@ -46,6 +51,7 @@ private extension RecipeDetailsViewController {
         coordinator?.popViewController()
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
+        
     }
 }
 //
