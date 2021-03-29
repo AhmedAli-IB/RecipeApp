@@ -23,11 +23,14 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Assets {
     internal static let accentColor = ColorAsset(name: "AccentColor")
+    internal static let backIcon = ImageAsset(name: "back-icon")
+    internal static let favoriteIcon = ImageAsset(name: "favorite-icon")
     internal static let favoriteTabIcon = ImageAsset(name: "favorite-tab-icon")
     internal static let foodImage = ImageAsset(name: "food-image")
     internal static let placeholder = ImageAsset(name: "placeholder")
     internal static let recipeTabIcon = ImageAsset(name: "recipe-tab-icon")
     internal static let splashIcon = ImageAsset(name: "splash-icon")
+    internal static let unfavoriteIcons = ImageAsset(name: "unfavorite-icons")
   }
   internal enum ColorPalette {
     internal static let primaryColor = ColorAsset(name: "Primary-color")
