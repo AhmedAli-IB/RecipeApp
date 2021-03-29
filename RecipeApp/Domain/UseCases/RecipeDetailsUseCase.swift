@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 // MARK: - RecipeDetailsUseCase
 //
 protocol RecipeDetailsUseCaseType {
@@ -33,6 +34,10 @@ final class RecipeDetailsUseCase: RecipeDetailsUseCaseType {
         itemCount > 0 ? removeFavorite(recipeID) : saveFavorite(recipeID)
     }
     
+    /// Check this item exist in realm
+    /// - Parameter recipeId: recipe id to favorite or un favorite
+    /// - Returns: `true` if the element was found in the sequence; otherwise,
+    ///   `false`.
     func contains(recipeId: String) -> Bool {
         guard let itemCount =  checkItemIsExist(recipeId) else {
             return false
