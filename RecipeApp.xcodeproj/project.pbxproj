@@ -63,6 +63,13 @@
 		608BB7B8260F9C02003DF558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608BB7B6260F9C02003DF558 /* LaunchScreen.storyboard */; };
 		60BB45D826122C190037FA38 /* String + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB45D726122C190037FA38 /* String + Helper.swift */; };
 		60BB45EE2612530F0037FA38 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 60BB45ED2612530F0037FA38 /* RealmSwift */; };
+		60BB45F4261254990037FA38 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB45F3261254990037FA38 /* RealmStorage.swift */; };
+		60BB45FC261254A40037FA38 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB45FB261254A40037FA38 /* RealmProvider.swift */; };
+		60BB4601261254AD0037FA38 /* RealmStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB4600261254AD0037FA38 /* RealmStorageManager.swift */; };
+		60BB4607261257CC0037FA38 /* StorageManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB4606261257CC0037FA38 /* StorageManagerType.swift */; };
+		60BB460F261257FA0037FA38 /* StorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB460E261257FA0037FA38 /* StorageType.swift */; };
+		60BB461726125EA80037FA38 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB461626125EA80037FA38 /* FavoriteModel.swift */; };
+		60BB461C261260A50037FA38 /* RecipeDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB461B261260A50037FA38 /* RecipeDetailsUseCase.swift */; };
 		60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */; };
 		60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */; };
 		60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4CE2610CFD400ACFB7F /* User.swift */; };
@@ -164,6 +171,13 @@
 		608BB7C9260F9C02003DF558 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608BB7CF260F9C02003DF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60BB45D726122C190037FA38 /* String + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Helper.swift"; sourceTree = "<group>"; };
+		60BB45F3261254990037FA38 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		60BB45FB261254A40037FA38 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		60BB4600261254AD0037FA38 /* RealmStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageManager.swift; sourceTree = "<group>"; };
+		60BB4606261257CC0037FA38 /* StorageManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManagerType.swift; sourceTree = "<group>"; };
+		60BB460E261257FA0037FA38 /* StorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageType.swift; sourceTree = "<group>"; };
+		60BB461626125EA80037FA38 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		60BB461B261260A50037FA38 /* RecipeDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsUseCase.swift; sourceTree = "<group>"; };
 		60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
 		60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		60F9F4CE2610CFD400ACFB7F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -449,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				604564D5260FE78000B3A203 /* UserDefaults */,
+				60BB45F22612548A0037FA38 /* Realm */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -533,6 +548,26 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		60BB45F22612548A0037FA38 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				60BB4605261257BD0037FA38 /* Protocol */,
+				60BB45F3261254990037FA38 /* RealmStorage.swift */,
+				60BB45FB261254A40037FA38 /* RealmProvider.swift */,
+				60BB4600261254AD0037FA38 /* RealmStorageManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		60BB4605261257BD0037FA38 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				60BB4606261257CC0037FA38 /* StorageManagerType.swift */,
+				60BB460E261257FA0037FA38 /* StorageType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		60F9F4AF2610BD8500ACFB7F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +600,7 @@
 			children = (
 				60F9F4CE2610CFD400ACFB7F /* User.swift */,
 				60F9F5232610FBE800ACFB7F /* RecipeMainModel.swift */,
+				60BB461626125EA80037FA38 /* FavoriteModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -574,6 +610,7 @@
 			children = (
 				60F9F4D62610D10B00ACFB7F /* LoginUseCase.swift */,
 				60F9F52B2610FD5400ACFB7F /* RecipeUseCase.swift */,
+				60BB461B261260A50037FA38 /* RecipeDetailsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -840,11 +877,13 @@
 			files = (
 				608BB7AC260F9C01003DF558 /* AppDelegate.swift in Sources */,
 				60456445260FCD1C00B3A203 /* Variable.swift in Sources */,
+				60BB45F4261254990037FA38 /* RealmStorage.swift in Sources */,
 				6045648A260FD4AB00B3A203 /* RecipeListViewController.swift in Sources */,
 				60F9F5792611284900ACFB7F /* NSObject+Helpers.swift in Sources */,
 				6044879B2611F1940067E41D /* DetailsTableViewHeader.swift in Sources */,
 				604487D52612005B0067E41D /* UICollectionView + Helpers.swift in Sources */,
 				604563EC260FB4E200B3A203 /* NetworkError.swift in Sources */,
+				60BB460F261257FA0037FA38 /* StorageType.swift in Sources */,
 				604563F2260FC1E100B3A203 /* Environment.swift in Sources */,
 				604487C02611F4880067E41D /* IngredientsCell.swift in Sources */,
 				60F9F5542611192200ACFB7F /* UIImage+LoadImage.swift in Sources */,
@@ -876,21 +915,26 @@
 				60456400260FC80C00B3A203 /* Coordinator.swift in Sources */,
 				60456442260FCD1C00B3A203 /* ObservationToken.swift in Sources */,
 				60456443260FCD1C00B3A203 /* PublishSubject.swift in Sources */,
+				60BB4607261257CC0037FA38 /* StorageManagerType.swift in Sources */,
 				6044878F2611EAA80067E41D /* RecipeDetailsViewModel.swift in Sources */,
 				604564A8260FD80000B3A203 /* ApplicationCoordinator.swift in Sources */,
 				604564C9260FE6EA00B3A203 /* UserDefaults.swift in Sources */,
+				60BB45FC261254A40037FA38 /* RealmProvider.swift in Sources */,
 				604564B2260FDA4F00B3A203 /* LoginViewController.swift in Sources */,
 				604563D8260FB1E200B3A203 /* URLSessionProtocol.swift in Sources */,
 				604564DF260FEB1C00B3A203 /* AuthCoordinator.swift in Sources */,
 				60F9F5192610E48900ACFB7F /* RecipeTextField.swift in Sources */,
 				604564D1260FE77500B3A203 /* UserDefaultsKeys.swift in Sources */,
 				60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */,
+				60BB461726125EA80037FA38 /* FavoriteModel.swift in Sources */,
 				604563BF260FB08C00B3A203 /* URLParameterEncoding.swift in Sources */,
 				608BB7AE260F9C01003DF558 /* SceneDelegate.swift in Sources */,
 				604563CE260FB12200B3A203 /* HttpTask.swift in Sources */,
 				60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */,
 				60BB45D826122C190037FA38 /* String + Helper.swift in Sources */,
 				60456446260FCD1C00B3A203 /* Observable.swift in Sources */,
+				60BB4601261254AD0037FA38 /* RealmStorageManager.swift in Sources */,
+				60BB461C261260A50037FA38 /* RecipeDetailsUseCase.swift in Sources */,
 				604563C4260FB0FB00B3A203 /* EndPointType.swift in Sources */,
 				60F9F56F261123E300ACFB7F /* Recipe+Representable.swift in Sources */,
 				604487B72611F43D0067E41D /* IngredientsTableViewCell.swift in Sources */,

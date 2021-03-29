@@ -19,6 +19,7 @@ class RecipeDetailsViewModel: BaseViewModel {
     // MARK: - Properties
     //
     private let recipe: RecipeMainModel
+    private let useCase: RecipeDetailsUseCaseType
     
     /// RecipeDetailsDataSource
     //
@@ -30,15 +31,33 @@ class RecipeDetailsViewModel: BaseViewModel {
     var recipeName: String {
         recipe.recipeName
     }
+    /// Check item is favorite
+    //
+    var isFavorite: Bool {
+        guard let recipeId = recipe.id else {
+            return false
+        }
+       return useCase.contains(recipeId: recipeId)
+    }
+    
     // MARK: - Init
     //
-    init(recipe: RecipeMainModel) {
+    init(recipe: RecipeMainModel, useCase: RecipeDetailsUseCaseType = RecipeDetailsUseCase()) {
         self.recipe = recipe
+        self.useCase = RecipeDetailsUseCase()
     }
     
     func viewDidLoad() {
         configureDataSource()
     }
+    
+    func toggleFavorite() {
+        guard let recipeId = recipe.id else {
+            return
+        }
+        useCase.toggleFavorite(recipeID: recipeId)
+    }
+
 }
 // MARK: - Helpers
 //

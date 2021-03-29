@@ -50,10 +50,13 @@ private extension RecipeDetailsViewController {
     @IBAction func backButtonTapped(_ sender: Any) {
         coordinator?.popViewController()
     }
+
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        
+        viewModel.toggleFavorite()
+        toggleFavoriteIcon()
     }
 }
+// MARK: - Configuration
 //
 private extension RecipeDetailsViewController {
     
@@ -65,15 +68,12 @@ private extension RecipeDetailsViewController {
         registerCells()
         configureTableView()
     }
-}
-// MARK: - Configure Table View
-//
-private extension RecipeDetailsViewController {
     /// Configure view
     ///
     func configureView() {
         navigationController?.setNavigationBarHidden(true, animated: true)
         recipeNameLabel.text = viewModel.recipeName
+        toggleFavoriteIcon()
     }
     /// Configure table view
     ///
@@ -110,6 +110,21 @@ private extension RecipeDetailsViewController {
         tableView.register(DetailsTableViewHeader.loadNib(),
                            forHeaderFooterViewReuseIdentifier: DetailsTableViewHeader.classNameWithoutNamespaces)
     }
+    /// Set favorite image
+    ///
+    func makeButtonFavorite() {
+        favoriteButton.setImage(Asset.Assets.favoriteIcon.image, for: .normal)
+    }
+    /// Setun favorite image
+    ///
+    func makeButtonUnfavorite() {
+        favoriteButton.setImage(Asset.Assets.unfavoriteIcons.image, for: .normal)
+    }
+    /// Toggle favorite icon
+    ///
+    func toggleFavoriteIcon() {
+       viewModel.isFavorite ? makeButtonFavorite() : makeButtonUnfavorite()
+   }
 }
 
 // MARK: - Configuration
