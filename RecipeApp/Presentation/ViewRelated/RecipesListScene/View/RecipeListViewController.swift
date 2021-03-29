@@ -73,6 +73,7 @@ private extension RecipeListViewController {
                                                   style: .done,
                                                   target: self,
                                                   action: #selector(logoutUser))
+        logoutBarButtonItem.tintColor = Asset.ColorPalette.primaryColor.color
         self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
     }
     /// Configure table view
@@ -105,7 +106,8 @@ private extension RecipeListViewController {
     
     @objc
      func logoutUser() {
-         print("clicked")
+        viewModel.logout()
+        coordinator?.logout()
     }
 }
 // MARK: - Constants
