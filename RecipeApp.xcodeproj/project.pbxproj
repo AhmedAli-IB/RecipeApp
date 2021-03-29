@@ -70,6 +70,11 @@
 		60BB460F261257FA0037FA38 /* StorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB460E261257FA0037FA38 /* StorageType.swift */; };
 		60BB461726125EA80037FA38 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB461626125EA80037FA38 /* FavoriteModel.swift */; };
 		60BB461C261260A50037FA38 /* RecipeDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB461B261260A50037FA38 /* RecipeDetailsUseCase.swift */; };
+		60BB4621261297CD0037FA38 /* EndPointTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB4620261297CD0037FA38 /* EndPointTypeMock.swift */; };
+		60BB46272612989A0037FA38 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB46262612989A0037FA38 /* NetworkLayerTests.swift */; };
+		60BB462F2612994D0037FA38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB462E2612994D0037FA38 /* Constants.swift */; };
+		60BB463426129B720037FA38 /* FailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB463326129B720037FA38 /* FailureMock.swift */; };
+		60BB463F26129C720037FA38 /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB463E26129C720037FA38 /* RecipeAppUITests.swift */; };
 		60F9F4A52610B1C400ACFB7F /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */; };
 		60F9F4B12610BDFE00ACFB7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */; };
 		60F9F4CF2610CFD400ACFB7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9F4CE2610CFD400ACFB7F /* User.swift */; };
@@ -178,6 +183,11 @@
 		60BB460E261257FA0037FA38 /* StorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageType.swift; sourceTree = "<group>"; };
 		60BB461626125EA80037FA38 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		60BB461B261260A50037FA38 /* RecipeDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsUseCase.swift; sourceTree = "<group>"; };
+		60BB4620261297CD0037FA38 /* EndPointTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTypeMock.swift; sourceTree = "<group>"; };
+		60BB46262612989A0037FA38 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		60BB462E2612994D0037FA38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		60BB463326129B720037FA38 /* FailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureMock.swift; sourceTree = "<group>"; };
+		60BB463E26129C720037FA38 /* RecipeAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAppUITests.swift; sourceTree = "<group>"; };
 		60F9F4A42610B1C400ACFB7F /* UIView + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
 		60F9F4B02610BDFE00ACFB7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		60F9F4CE2610CFD400ACFB7F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -514,7 +524,9 @@
 		608BB7C1260F9C02003DF558 /* RecipeAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				60BB4625261298500037FA38 /* NetworkLayerTests */,
 				608BB7C4260F9C02003DF558 /* Info.plist */,
+				60BB462E2612994D0037FA38 /* Constants.swift */,
 			);
 			path = RecipeAppTests;
 			sourceTree = "<group>";
@@ -522,6 +534,7 @@
 		608BB7CC260F9C02003DF558 /* RecipeAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				60BB463E26129C720037FA38 /* RecipeAppUITests.swift */,
 				608BB7CF260F9C02003DF558 /* Info.plist */,
 			);
 			path = RecipeAppUITests;
@@ -566,6 +579,16 @@
 				60BB460E261257FA0037FA38 /* StorageType.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		60BB4625261298500037FA38 /* NetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				60BB4620261297CD0037FA38 /* EndPointTypeMock.swift */,
+				60BB46262612989A0037FA38 /* NetworkLayerTests.swift */,
+				60BB463326129B720037FA38 /* FailureMock.swift */,
+			);
+			path = NetworkLayerTests;
 			sourceTree = "<group>";
 		};
 		60F9F4AF2610BD8500ACFB7F /* ViewModel */ = {
@@ -763,10 +786,12 @@
 					};
 					608BB7BD260F9C02003DF558 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 						TestTargetID = 608BB7A7260F9C01003DF558;
 					};
 					608BB7C8260F9C02003DF558 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 						TestTargetID = 608BB7A7260F9C01003DF558;
 					};
 				};
@@ -951,6 +976,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BB46272612989A0037FA38 /* NetworkLayerTests.swift in Sources */,
+				60BB4621261297CD0037FA38 /* EndPointTypeMock.swift in Sources */,
+				60BB463426129B720037FA38 /* FailureMock.swift in Sources */,
+				60BB462F2612994D0037FA38 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,6 +987,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BB463F26129C720037FA38 /* RecipeAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,6 +1177,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = RecipeAppTests/Info.plist;
@@ -1158,6 +1189,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RecipeAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeApp.app/RecipeApp";
@@ -1169,6 +1201,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = RecipeAppTests/Info.plist;
@@ -1190,6 +1223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = RecipeAppUITests/Info.plist;
@@ -1200,6 +1234,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RecipeAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RecipeApp;
@@ -1210,6 +1245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = RecipeAppUITests/Info.plist;
