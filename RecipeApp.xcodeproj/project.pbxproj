@@ -10,6 +10,8 @@
 		600F155D26131B9F00570A78 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F155C26131B9F00570A78 /* ValidatorTests.swift */; };
 		600F156626131F8300570A78 /* LoginUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F156526131F8300570A78 /* LoginUseCaseMock.swift */; };
 		600F156E2613225A00570A78 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F156D2613225A00570A78 /* LoginViewModelTests.swift */; };
+		600F157826132E8C00570A78 /* RecipeListUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F157726132E8C00570A78 /* RecipeListUseCaseMock.swift */; };
+		600F158026132EA600570A78 /* RecipeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F157F26132EA600570A78 /* RecipeListViewModelTests.swift */; };
 		6044878F2611EAA80067E41D /* RecipeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044878E2611EAA80067E41D /* RecipeDetailsViewModel.swift */; };
 		604487942611EB200067E41D /* RecipeDetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604487932611EB200067E41D /* RecipeDetailsDataSource.swift */; };
 		6044879B2611F1940067E41D /* DetailsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044879A2611F1940067E41D /* DetailsTableViewHeader.swift */; };
@@ -121,6 +123,8 @@
 		600F155C26131B9F00570A78 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		600F156526131F8300570A78 /* LoginUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseMock.swift; sourceTree = "<group>"; };
 		600F156D2613225A00570A78 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		600F157726132E8C00570A78 /* RecipeListUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListUseCaseMock.swift; sourceTree = "<group>"; };
+		600F157F26132EA600570A78 /* RecipeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModelTests.swift; sourceTree = "<group>"; };
 		6044878E2611EAA80067E41D /* RecipeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewModel.swift; sourceTree = "<group>"; };
 		604487932611EB200067E41D /* RecipeDetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsDataSource.swift; sourceTree = "<group>"; };
 		6044879A2611F1940067E41D /* DetailsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewHeader.swift; sourceTree = "<group>"; };
@@ -257,6 +261,15 @@
 				600F156D2613225A00570A78 /* LoginViewModelTests.swift */,
 			);
 			path = LoginViewModelTests;
+			sourceTree = "<group>";
+		};
+		600F157626132E6E00570A78 /* RecipeListViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				600F157726132E8C00570A78 /* RecipeListUseCaseMock.swift */,
+				600F157F26132EA600570A78 /* RecipeListViewModelTests.swift */,
+			);
+			path = RecipeListViewModelTests;
 			sourceTree = "<group>";
 		};
 		604487982611F0140067E41D /* Cells */ = {
@@ -547,9 +560,10 @@
 		608BB7C1260F9C02003DF558 /* RecipeAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				60BB4625261298500037FA38 /* NetworkLayerTests */,
 				600F155B26131B8A00570A78 /* ValidatorTests */,
 				600F156426131EC800570A78 /* LoginViewModelTests */,
-				60BB4625261298500037FA38 /* NetworkLayerTests */,
+				600F157626132E6E00570A78 /* RecipeListViewModelTests */,
 				608BB7C4260F9C02003DF558 /* Info.plist */,
 				60BB462E2612994D0037FA38 /* Constants.swift */,
 			);
@@ -1004,8 +1018,10 @@
 				60BB46272612989A0037FA38 /* NetworkLayerTests.swift in Sources */,
 				600F155D26131B9F00570A78 /* ValidatorTests.swift in Sources */,
 				60BB4621261297CD0037FA38 /* EndPointTypeMock.swift in Sources */,
+				600F158026132EA600570A78 /* RecipeListViewModelTests.swift in Sources */,
 				60BB463426129B720037FA38 /* FailureMock.swift in Sources */,
 				60BB462F2612994D0037FA38 /* Constants.swift in Sources */,
+				600F157826132E8C00570A78 /* RecipeListUseCaseMock.swift in Sources */,
 				600F156E2613225A00570A78 /* LoginViewModelTests.swift in Sources */,
 				600F156626131F8300570A78 /* LoginUseCaseMock.swift in Sources */,
 			);
