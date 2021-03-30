@@ -1,0 +1,42 @@
+//
+//  TableView+Helpers.swift
+//  RecipeApp
+//
+//  Created by Ahmed Ali on 28/03/2021.
+//
+
+import UIKit
+
+// MARK: - UITableView + Helpers
+//
+extension UITableView {
+    
+    func registerCellNib<T: UITableViewCell>(_: T.Type, reuseIdentifier: String? = nil) {
+        let nibName = reuseIdentifier ?? T.classNameWithoutNamespaces
+        self.register(T.loadNib(), forCellReuseIdentifier: nibName)
+    }
+    
+    /// Dequeue cell with generics
+    func dequeue<T: UITableViewCell>(_: T.Type) -> T {
+        guard
+            let cell = dequeueReusableCell(withIdentifier: String(describing: T.self)) as? T
+        else { fatalError("Could not deque cell with type \(T.self)") }
+        
+        return cell
+    }
+    
+    /// Register UITableViewHeaderFooterView using a nib.
+    ///
+    func registerHeaderNib<T: UITableViewHeaderFooterView>(_: T.Type) {
+        register(T.loadNib(), forHeaderFooterViewReuseIdentifier: T.classNameWithoutNamespaces)
+    }
+    
+    /// Dequee reusable `HeaderFooterView` with type.
+    ///
+    func dequeueHeaderFooter<T: UITableViewHeaderFooterView>() -> T {
+        guard let header = dequeueReusableHeaderFooterView(withIdentifier: T.classNameWithoutNamespaces) as? T else {
+            fatalError("Unable to get header view")
+        }
+        return header
+    }
+}

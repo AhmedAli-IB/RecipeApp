@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="RecipeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="g8Z-0q-GL8" id="W0h-HF-vEP"/>
+                <outlet property="loginButton" destination="nfM-ZN-X1k" id="zDz-e8-RiO"/>
+                <outlet property="loginContainerView" destination="XlY-yU-RYe" id="bAX-EN-Wwq"/>
+                <outlet property="passwordTextField" destination="CSo-Ch-PTQ" id="4qK-7o-9VU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bm-0U-93q">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7A-CB-4AG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-image" translatesAutoresizingMaskIntoConstraints="NO" id="2uU-tH-9YO">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="zCy-xY-Nr9"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kYe-zR-tJ2">
+                                    <rect key="frame" x="20" y="284" width="374" height="296"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-yU-RYe">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nNR-S1-eoW">
+                                                    <rect key="frame" x="16" y="36" width="342" height="128"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-0q-GL8" customClass="RecipeTextField" customModule="RecipeApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="51.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-Ch-PTQ" customClass="RecipeTextField" customModule="RecipeApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="76.5" width="342" height="51.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="GDg-F4-FD8"/>
+                                                <constraint firstAttribute="trailing" secondItem="nNR-S1-eoW" secondAttribute="trailing" constant="16" id="Otx-EF-FtG"/>
+                                                <constraint firstItem="nNR-S1-eoW" firstAttribute="leading" secondItem="XlY-yU-RYe" secondAttribute="leading" constant="16" id="TSj-wu-Q3k"/>
+                                                <constraint firstItem="nNR-S1-eoW" firstAttribute="top" secondItem="XlY-yU-RYe" secondAttribute="top" constant="36" id="VTe-Ah-DxL"/>
+                                                <constraint firstAttribute="bottom" secondItem="nNR-S1-eoW" secondAttribute="bottom" constant="36" id="kfl-3w-WSD"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-ZN-X1k">
+                                            <rect key="frame" x="0.0" y="240" width="374" height="56"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="56" id="Brp-y8-djL"/>
+                                            </constraints>
+                                            <state key="normal" title="Login">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="WAI-xw-v0t"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="Primary-color"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kYe-zR-tJ2" secondAttribute="trailing" constant="20" id="Kwp-jW-O2d"/>
+                                <constraint firstItem="kYe-zR-tJ2" firstAttribute="leading" secondItem="B7A-CB-4AG" secondAttribute="leading" constant="20" id="QDh-0o-q2F"/>
+                                <constraint firstItem="kYe-zR-tJ2" firstAttribute="top" secondItem="2uU-tH-9YO" secondAttribute="bottom" constant="40" id="Wns-5j-Nnr"/>
+                                <constraint firstAttribute="trailing" secondItem="2uU-tH-9YO" secondAttribute="trailing" id="ZfR-BY-iMq"/>
+                                <constraint firstItem="2uU-tH-9YO" firstAttribute="leading" secondItem="B7A-CB-4AG" secondAttribute="leading" id="ljc-ft-cJs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="B7A-CB-4AG" firstAttribute="top" secondItem="0bm-0U-93q" secondAttribute="top" id="EUt-5d-pNT"/>
+                        <constraint firstAttribute="trailing" secondItem="B7A-CB-4AG" secondAttribute="trailing" id="MaF-wj-fLn"/>
+                        <constraint firstAttribute="bottom" secondItem="B7A-CB-4AG" secondAttribute="bottom" id="sB4-7D-Xfc"/>
+                        <constraint firstItem="B7A-CB-4AG" firstAttribute="leading" secondItem="0bm-0U-93q" secondAttribute="leading" id="y6T-7e-0Ay"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Primary-color"/>
+            <constraints>
+                <constraint firstItem="0bm-0U-93q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Yz-sv-4hq"/>
+                <constraint firstAttribute="bottom" secondItem="0bm-0U-93q" secondAttribute="bottom" id="IPz-qp-Xcp"/>
+                <constraint firstItem="2uU-tH-9YO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NLh-xq-jEs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0bm-0U-93q" secondAttribute="trailing" id="bn7-ef-8yS"/>
+                <constraint firstItem="B7A-CB-4AG" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="eAh-fV-IEY"/>
+                <constraint firstItem="B7A-CB-4AG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="sQh-gp-sa5"/>
+                <constraint firstItem="0bm-0U-93q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ve1-rp-AK2"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="119"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="CSo-Ch-PTQ">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
+        <designable name="g8Z-0q-GL8">
+            <size key="intrinsicContentSize" width="119.5" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="food-image" width="4000" height="2667"/>
+        <namedColor name="Primary-color">
+            <color red="0.84313725490196079" green="0.82352941176470584" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
