@@ -44,7 +44,7 @@ class RecipeDetailsViewModel: BaseViewModel {
     //
     init(recipe: RecipeMainModel, useCase: RecipeDetailsUseCaseType = RecipeDetailsUseCase()) {
         self.recipe = recipe
-        self.useCase = RecipeDetailsUseCase()
+        self.useCase = useCase
     }
     
     func viewDidLoad() {

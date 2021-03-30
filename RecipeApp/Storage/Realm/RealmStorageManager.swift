@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import RealmSwift
 /// RealmStorageManager: Manages the entire Realm Stack. Conforms to the StorageManager API.
 ///
 final class RealmStorageManager: StorageManagerType {
@@ -18,9 +18,9 @@ final class RealmStorageManager: StorageManagerType {
     let storage: StorageType
     
     /// Designated Initializer.
-    init() {
+    init(realm: Realm? = RealmProvider.default) {
         // self.name = name
-        self.storage = RealmStorage()
+        self.storage = RealmStorage(realm: realm)
     }
     
     /// This method effectively destroys all of the stored data, and generates a blank Persistent Store from scratch.
