@@ -26,3 +26,8 @@ Show a list of recipes  and a recipe details screen. It follows MVVM-C software 
 - `SwiftLint` for code styling.
 - `SwiftGen` for code generation.
 - Unit testing.
+- 
+## App Screens
+<img src="screenshots/login.png" >
+<img src="screenshots/home.png" >
+<img src="screenshots/details.png" >
