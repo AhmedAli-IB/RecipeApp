@@ -3,6 +3,7 @@ Show a list of recipes  and a recipe details screen. It follows MVVM-C software 
 
 ## Important Notes
 ● The app support minimum iOS 13 Or above.
+
 ● Due to  no server/API for login feature, email and password are be hardcoded for two users to check favorite feature separately.
   - First user (email: ahmed@gmail.com, password: 12345678).
   - Second user (email: ali@gmail.com, password: 87654321).
