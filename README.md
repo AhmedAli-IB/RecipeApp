@@ -8,6 +8,8 @@ Show a list of recipes  and a recipe details screen. It follows MVVM-C software 
   - First user (email: ahmed@gmail.com, password: 12345678).
   - Second user (email: ali@gmail.com, password: 87654321).
 
+● (Realm - kingfisher) dependencies installed via swift package manager
+
 ## Used Libraries
 
   ● Realm
