@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600F155D26131B9F00570A78 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F155C26131B9F00570A78 /* ValidatorTests.swift */; };
 		6044878F2611EAA80067E41D /* RecipeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044878E2611EAA80067E41D /* RecipeDetailsViewModel.swift */; };
 		604487942611EB200067E41D /* RecipeDetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604487932611EB200067E41D /* RecipeDetailsDataSource.swift */; };
 		6044879B2611F1940067E41D /* DetailsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044879A2611F1940067E41D /* DetailsTableViewHeader.swift */; };
@@ -115,6 +116,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		600F155C26131B9F00570A78 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		6044878E2611EAA80067E41D /* RecipeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewModel.swift; sourceTree = "<group>"; };
 		604487932611EB200067E41D /* RecipeDetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsDataSource.swift; sourceTree = "<group>"; };
 		6044879A2611F1940067E41D /* DetailsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewHeader.swift; sourceTree = "<group>"; };
@@ -236,6 +238,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600F155B26131B8A00570A78 /* ValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				600F155C26131B9F00570A78 /* ValidatorTests.swift */,
+			);
+			path = ValidatorTests;
+			sourceTree = "<group>";
+		};
 		604487982611F0140067E41D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +534,7 @@
 		608BB7C1260F9C02003DF558 /* RecipeAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				600F155B26131B8A00570A78 /* ValidatorTests */,
 				60BB4625261298500037FA38 /* NetworkLayerTests */,
 				608BB7C4260F9C02003DF558 /* Info.plist */,
 				60BB462E2612994D0037FA38 /* Constants.swift */,
@@ -977,6 +988,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60BB46272612989A0037FA38 /* NetworkLayerTests.swift in Sources */,
+				600F155D26131B9F00570A78 /* ValidatorTests.swift in Sources */,
 				60BB4621261297CD0037FA38 /* EndPointTypeMock.swift in Sources */,
 				60BB463426129B720037FA38 /* FailureMock.swift in Sources */,
 				60BB462F2612994D0037FA38 /* Constants.swift in Sources */,
