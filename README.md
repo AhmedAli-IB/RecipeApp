@@ -28,6 +28,5 @@ Show a list of recipes  and a recipe details screen. It follows MVVM-C software 
 - Unit testing.
 - 
 ## App Screens
-<img src="screenshots/login.png" width=300 hight= 300 >
-<img src="screenshots/home.png" width=300 hight= 300 >
+<img src="screenshots/login.png" width=300 hight= 300 > <img src="screenshots/home.png" width=300 hight= 300 >
 <img src="screenshots/details.png" width=300 hight= 300>
